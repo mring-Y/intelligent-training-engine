@@ -1,0 +1,23 @@
+ARG ITE_BASE_IMAGE=ite-ac-policy:20261115-v1
+FROM ${ITE_BASE_IMAGE}
+ARG ITE_SOURCE_COMMIT
+ARG ITE_SOURCE_SHA256
+ENV ITE_SOURCE_COMMIT=${ITE_SOURCE_COMMIT} ITE_SOURCE_SHA256=${ITE_SOURCE_SHA256} ITE_SOURCE_DIRTY=false \
+    ITE_OFFICIAL_RUNTIME_PYTHON=/opt/ite-official-a/bin/python \
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 \
+    HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 TOKENIZERS_PARALLELISM=false
+LABEL org.opencontainers.image.revision=${ITE_SOURCE_COMMIT} \
+      org.ite.source.sha256=${ITE_SOURCE_SHA256} \
+      org.ite.source.dirty="false" \
+      org.ite.default-entrypoint="external-parent-continuation" \
+      org.ite.invocation-contract="/app/configs/continuation-contract.json" \
+      org.ite.platform-startup-contract="project-adapter; platform-confirmation-pending"
+WORKDIR /app
+COPY ite ./ite
+COPY scripts ./scripts
+COPY tests ./tests
+COPY configs ./configs
+COPY train.py predict.py pyproject.toml ./
+RUN python -c "from ite.tracking import source_metadata; source_metadata()"
+ENTRYPOINT []
+CMD ["python", "train.py"]
