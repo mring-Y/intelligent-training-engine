@@ -1,0 +1,18 @@
+{
+  "protocol": "contest.harness.workspace.v2",
+  "sdk": "contest_harness",
+  "sdk_version": "1.0.2",
+  "model_access": "host_gateway_rpc",
+  "commands": ["python3 /app/harness.py describe", "python3 /app/harness.py train", "python3 /app/harness.py predict"],
+  "parent_root": "/previous",
+  "work_root": "/workspace",
+  "prediction_root": "/model",
+  "policy": "A_step7_replay_B_static_C_head_only_epoch2",
+  "gradients": "authorized train projection only",
+  "deployment": "local independent future gate, paired safety thresholds, actual platform validation, then model selection",
+  "model_calls_per_round": 2,
+  "on_model_transport_failure": "fail the round; no invented receipt or zero-call fallback",
+  "on_invalid_model_decision": "retain the supplied platform parent",
+  "candidate_upload_limit_bytes": 67108864,
+  "training_limits": {"candidate_seconds": 5, "total_seconds": 20, "attempts": 4}
+}
