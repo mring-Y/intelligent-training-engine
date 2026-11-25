@@ -15,6 +15,7 @@ LABEL org.opencontainers.image.revision=${ITE_SOURCE_COMMIT} \
       org.ite.source.sha256=${ITE_SOURCE_SHA256} \
       org.ite.source.dirty=${ITE_SOURCE_DIRTY} \
       org.ite.default-entrypoint="official-workspace-v2" \
+      org.ite.policy="A Step 7 primary-score continuation, B static, C stable head and low-RUL residual, primary-score selection" \
       org.ite.invocation-contract="/app/configs/contest-contract.json" \
       org.ite.platform-startup-contract="contest.harness.workspace.v2" \
       org.ite.model-access="host_gateway_rpc" \

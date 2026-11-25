@@ -1,7 +1,56 @@
 {
-  "source_commit": "3186ccd214d271f69228b4c6d5b9e494859188b2",
-  "ite_sha256": "2f051f284963f43328676980c2b0b26fdfc77c1e09ff4a36dd89c8e2d7e282d3",
-  "zip_sha256": "8d8d14fc8ea6f6551f0aa15c6ad4dcd7d75c7cee70522f1e13577e1104c74429",
+  "source_commit": "dd9011a45ddcc1b89ddc5d11375c52b7e9aac4c0",
+  "ite_sha256": "2a3b687ee4110bb20338a503678c2b2c5dbb9229b2c4f552b4d3edfa59a39ba4",
+  "zip_sha256": "854db7d7169229b6760ca51a0553b7fab9e7c643dd8dcfd4ba6fe05fbbbe844b",
+  "base_public_snapshot": {
+    "commit": "4d693292ac84d01f58b6e7f0fd0225fbf908a836",
+    "sha256": "8d8d14fc8ea6f6551f0aa15c6ad4dcd7d75c7cee70522f1e13577e1104c74429"
+  },
+  "submission_image": {
+    "tag": "ite-contest-sdk:20261124-merged-v1",
+    "id": "sha256:8f0da5f8aebd2297e2e2b09574566c9e88858751721d223228b15754e731baf4",
+    "ite_sha256": "bd09689b33c9671148a214ca3030c8b2b584740566ea8eb70134ecd18208207a",
+    "source_dirty": true,
+    "docker_save_bytes": 318951936,
+    "docker_save_sha256": "3680b47a67786f481eee58b1499751a7c8e3b998c72025516c22246d144a10eb"
+  },
+  "updated_paths": [
+    "configs/contest-contract.json",
+    "ite/a_acetaldehyde_gate.py",
+    "ite/c_adapter_model.py",
+    "ite/c_adapter_worker.py",
+    "ite/c_gate_model.py",
+    "ite/c_gate_worker.py",
+    "ite/c_low_rul_residual.py",
+    "ite/c_rbf_model.py",
+    "ite/c_rbf_worker.py",
+    "ite/c_stable_head.py",
+    "ite/compact_rbf.py",
+    "ite/contest_submission.py",
+    "ite/continuation.py",
+    "ite/engine_balance.py",
+    "ite/gate_reference.py",
+    "ite/input_adapter.py",
+    "ite/input_gate.py",
+    "ite/official_finetune.py",
+    "ite/official_model.py",
+    "ite/official_sft_replay.py",
+    "ite/official_worker.py",
+    "ite/operating_support.py",
+    "ite/platform_data.py",
+    "ite/platform_predict_worker.py",
+    "ite/residual_calibration.py",
+    "ite/training.py",
+    "scripts/Dockerfile.platform",
+    "scripts/verify_contest_protocol.py",
+    "tests/contest_host.py",
+    "tests/test_contest_submission.py"
+  ],
+  "omitted_historical_diagnostics": [
+    "docs/validation/2026-11-12-swanlab-milestone.json",
+    "docs/validation/2026-11-13-official-head-only.json",
+    "docs/validation/2026-11-14-pytrio-decision-sft.json"
+  ],
   "files": [
     {
       "path": ".dockerignore",
@@ -60,8 +109,8 @@
     },
     {
       "path": "configs/contest-contract.json",
-      "bytes": 905,
-      "sha256": "e257c6f45bc3624629aff2b22d571820f61b6c25e762fb0953f6e8702abead43"
+      "bytes": 923,
+      "sha256": "8d0a26b3860d7bf8043fb98795ddf6947de14e0ae460a4da125e3d2b3925807f"
     },
     {
       "path": "configs/continuation-contract.json",
@@ -879,11 +928,6 @@
       "sha256": "70a1e5bcd687c9dd570387ce2b6bba630f2f4990becd9b88fd94cbfa06c275ec"
     },
     {
-      "path": "docs/validation/2026-11-12-swanlab-milestone.json",
-      "bytes": 3147,
-      "sha256": "5d511fccaf3873d067a55a03359e35eb98db5010a52cd3feae09be4949b1c4c6"
-    },
-    {
       "path": "docs/validation/2026-11-13-official-b-head.json",
       "bytes": 64803,
       "sha256": "bf6058dbd995aab2aadfddff95f30bef010ce439c382e1a61650e3680ef833fb"
@@ -892,11 +936,6 @@
       "path": "docs/validation/2026-11-13-official-c-source-diagnosis.json",
       "bytes": 16863,
       "sha256": "3ad05a0ecc6a722de4f3d4d2829cb2d9ef81ac84d8abd68c3dda7dad74c1c750"
-    },
-    {
-      "path": "docs/validation/2026-11-13-official-head-only.json",
-      "bytes": 14963,
-      "sha256": "3a30c6b40e395e4a44affed28c8aeb7642a2b0bdaa3cb41605dedca062f25cf8"
     },
     {
       "path": "docs/validation/2026-11-13-official-safety-calibration.json",
@@ -927,11 +966,6 @@
       "path": "docs/validation/2026-11-14-pytrio-crossfit.json",
       "bytes": 11723,
       "sha256": "71a323d4d833932c9cdfcd4f3e4c7aa07833fecf89607393e3da6c9488c6ec47"
-    },
-    {
-      "path": "docs/validation/2026-11-14-pytrio-decision-sft.json",
-      "bytes": 17533,
-      "sha256": "50ed07c47d12ff58fb06b4c26ab93c039c78c81fdd13a575d973abf7bbcb778d"
     },
     {
       "path": "docs/validation/2026-11-15-ac-policy-integration.json",
@@ -979,6 +1013,11 @@
       "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
     },
     {
+      "path": "ite/a_acetaldehyde_gate.py",
+      "bytes": 5939,
+      "sha256": "abb49297e298946aa9df532b7495c465cbc186359ed6353eb50e971e9bf7c5be"
+    },
+    {
       "path": "ite/budget.py",
       "bytes": 2652,
       "sha256": "dfdee45a9e9ef9d8491d848f6129a7fdb969ee5008cacba7c92428c0aba00717"
@@ -987,6 +1026,46 @@
       "path": "ite/budget_guard.py",
       "bytes": 11483,
       "sha256": "90bf448dc6e12d0d97cd3f76068af549513ad17d7a30b686d8dc6f0b09d31b06"
+    },
+    {
+      "path": "ite/c_adapter_model.py",
+      "bytes": 8462,
+      "sha256": "379a915b09a70901bd97c1060af03a5f2a4c4727a837a1fe099399e2f1b2ccb4"
+    },
+    {
+      "path": "ite/c_adapter_worker.py",
+      "bytes": 4217,
+      "sha256": "3684df485bb4b086997ae45baac9351fbcb9731429dbee49042f841cbe072a56"
+    },
+    {
+      "path": "ite/c_gate_model.py",
+      "bytes": 37114,
+      "sha256": "2afa98323cf38401982072e0f2c6983fa93cd0bac530f9342c07ffda1a0adcf8"
+    },
+    {
+      "path": "ite/c_gate_worker.py",
+      "bytes": 17739,
+      "sha256": "98ec733a601aa050560fb46e2ebd57e3e7e9f61d7158b286ca6dbd84bad89422"
+    },
+    {
+      "path": "ite/c_low_rul_residual.py",
+      "bytes": 3689,
+      "sha256": "bf1befa7760637ed5a814f3dde49591e6cafea49098e7f8dc232a21eafaf6e03"
+    },
+    {
+      "path": "ite/c_rbf_model.py",
+      "bytes": 8554,
+      "sha256": "195d12a8bbc8dd6988a6e12186c7b24f2e6bbf93c6958503ce8761b1e9b0d2a5"
+    },
+    {
+      "path": "ite/c_rbf_worker.py",
+      "bytes": 4609,
+      "sha256": "37a0424e060be84d33a455beb38eea92b2f5ad5f9facbd9b94847fc4d6943897"
+    },
+    {
+      "path": "ite/c_stable_head.py",
+      "bytes": 19266,
+      "sha256": "b2c2ba3e34807c164f57bfe10a2f627c621a0e7ab47e8268bb2906879f9ce1d6"
     },
     {
       "path": "ite/cli.py",
@@ -1004,19 +1083,24 @@
       "sha256": "0c36b94b881c0009215a9430def6d4e348afce26b0aebf8d81f40145f74d166c"
     },
     {
+      "path": "ite/compact_rbf.py",
+      "bytes": 3312,
+      "sha256": "2ee57e2960b0b3a55cd195a88a9599a49ad7d845d1e1fdb5f81d7986a1b99ced"
+    },
+    {
       "path": "ite/config.py",
       "bytes": 26573,
       "sha256": "e602d648a3c55e9c619e96b5d880cb45642a8285bbd8cfa64911b4fbc466dd4d"
     },
     {
       "path": "ite/contest_submission.py",
-      "bytes": 21340,
-      "sha256": "fb804d75a6e18b8c0113b912a71a16e5e19f3472d05e1d3a718ef92c0a408597"
+      "bytes": 29132,
+      "sha256": "9d961d96754bce9047f179b71bd288215f720753f052c5f80c1b31c66e9120eb"
     },
     {
       "path": "ite/continuation.py",
-      "bytes": 22179,
-      "sha256": "d51d48c668d9ab6afc5829964e8499663a57e05a57d2136c198b55a77684b21c"
+      "bytes": 34069,
+      "sha256": "9f8572b18209402b0ad44066075d751d353b130145a0168afdc594adcabeeda9"
     },
     {
       "path": "ite/controller.py",
@@ -1044,6 +1128,16 @@
       "sha256": "bebac85c7eb7d7ddc2076c2eca426bd520ecaea7f5684e201a2719e7062cb94b"
     },
     {
+      "path": "ite/engine_balance.py",
+      "bytes": 1646,
+      "sha256": "72d7ebe90d67c67fb64f7cd931c636e2e910925b0b8d2daa4e15bdaac5ea1ca2"
+    },
+    {
+      "path": "ite/gate_reference.py",
+      "bytes": 2276,
+      "sha256": "873a41c44b5220a96c73bddbb3d68bfba1818348d4a6ec615f3818b91392072d"
+    },
+    {
       "path": "ite/harness.py",
       "bytes": 10681,
       "sha256": "0a200b5f6490a86d7cfc43c74f446a0ebdb2999bf4c7ce4ee7e1fd54e89d218a"
@@ -1057,6 +1151,16 @@
       "path": "ite/heuristic_override.py",
       "bytes": 3524,
       "sha256": "efc8cf71e329991a9e38ff49e94a2ca2421221f8260e1fed28c0e305767d1f63"
+    },
+    {
+      "path": "ite/input_adapter.py",
+      "bytes": 4589,
+      "sha256": "72e6f5db2ef27005307d383b30a2217c48d9110b961423f0d7116e54fc7371ce"
+    },
+    {
+      "path": "ite/input_gate.py",
+      "bytes": 2822,
+      "sha256": "6c2631907d5f38ba3369331ac87638ffe0ab8913de343c00996d49f2517f407d"
     },
     {
       "path": "ite/iteration_audit.py",
@@ -1105,13 +1209,13 @@
     },
     {
       "path": "ite/official_finetune.py",
-      "bytes": 4894,
-      "sha256": "4bf1c5a38a18f2535f711798c18d5d71636fcd0e16172322ce68fb57164192f8"
+      "bytes": 7839,
+      "sha256": "396a965712ad7511dcf72aa5e8dc62e4186da30a2de7002629ff7b1551d608f9"
     },
     {
       "path": "ite/official_model.py",
-      "bytes": 25473,
-      "sha256": "9aad7f140d61f207426bf4f2db59a29f2a29fc4a101ca7fb986ca3577997cdd0"
+      "bytes": 25700,
+      "sha256": "d7a28210b39a5b203787e5e9f06c350261c7db882861df936bd7da683eeca1d8"
     },
     {
       "path": "ite/official_sft_crossfit.py",
@@ -1125,8 +1229,8 @@
     },
     {
       "path": "ite/official_sft_replay.py",
-      "bytes": 29475,
-      "sha256": "6025891779fc1192dccd811a73a61be33681536f79825017b7eb3206f315aa66"
+      "bytes": 41929,
+      "sha256": "27f4e3f44949d7fc02ca7da3eed1766de94d1be99cc38ca2896de73b103be3b4"
     },
     {
       "path": "ite/official_sft_teacher.py",
@@ -1135,18 +1239,23 @@
     },
     {
       "path": "ite/official_worker.py",
-      "bytes": 7790,
-      "sha256": "336ae7faaf663f70601b7714a1d73a64cecd720b8e47fb45ccf315201b9f2636"
+      "bytes": 9059,
+      "sha256": "e64803d4c3567aeb1eed7b390fe0765659fde2fcb038846e0506661cbc72f056"
+    },
+    {
+      "path": "ite/operating_support.py",
+      "bytes": 3415,
+      "sha256": "9dd2c89294e44aeffea4ed35d35c37212c115f22b1aa335cf8aa1d492cfbc34a"
     },
     {
       "path": "ite/platform_data.py",
-      "bytes": 5588,
-      "sha256": "b16e256ac039e2788f1a8a795a9c53a7f06d9bed261a7e88f3de2c03191301a7"
+      "bytes": 7137,
+      "sha256": "4bc063282ab76fa4ca5b898cc9be430f3a775cd835569b1747c89f05eaab0bb6"
     },
     {
       "path": "ite/platform_predict_worker.py",
-      "bytes": 2056,
-      "sha256": "a893049dc89c05eae5209f2153fefcc144b1d7628987fb1d9f8b21170290a06d"
+      "bytes": 4320,
+      "sha256": "b74bc109b3d9105384dae8129ab47d2b11de65c03eb8949d44d2a119dfaae522"
     },
     {
       "path": "ite/providers.py",
@@ -1157,6 +1266,11 @@
       "path": "ite/report.py",
       "bytes": 8185,
       "sha256": "163b2369219ea359c570cfd2890a4a7d27a0cf4a8e2e10996506cfd57ac5083c"
+    },
+    {
+      "path": "ite/residual_calibration.py",
+      "bytes": 6068,
+      "sha256": "dd2e2aa97c1a3bc0fd740ad3ef5bac646fda884b01907db2475b99768708c1f0"
     },
     {
       "path": "ite/runner.py",
@@ -1180,8 +1294,8 @@
     },
     {
       "path": "ite/training.py",
-      "bytes": 11687,
-      "sha256": "b47a5b9250d6dec6fd67022f11045db43c63a32005ddcaccc76994d0e6723ed9"
+      "bytes": 11576,
+      "sha256": "6746085cf65d728eb91cac8002212cc79d65197861630250b0589a85158a6e56"
     },
     {
       "path": "ite/tree_model.py",
@@ -1280,8 +1394,8 @@
     },
     {
       "path": "scripts/Dockerfile.platform",
-      "bytes": 2035,
-      "sha256": "81ed5d827d12a64027c8cc3f4caed822e7f791a39a166b09386360cced3950c6"
+      "bytes": 2132,
+      "sha256": "f56068849b9a858f3c13edc9a1ea35360f160ea9899efc85174feeb5c17392d2"
     },
     {
       "path": "scripts/Dockerfile.tree",
@@ -1510,13 +1624,13 @@
     },
     {
       "path": "scripts/verify_contest_protocol.py",
-      "bytes": 12581,
-      "sha256": "85d50c48c344c19e8dc2695fa8c8cb5b93b104a85e3917e38993d85882581268"
+      "bytes": 13002,
+      "sha256": "cf326858139aa3be9fd728136881348d74f7665574ff363959ef9d81a1a29c16"
     },
     {
       "path": "tests/contest_host.py",
-      "bytes": 8173,
-      "sha256": "6db21a25505c7dde2cc0efe629a4f307bc59874cdddc5e93563d5b65b75af6fc"
+      "bytes": 8747,
+      "sha256": "217f1c4c87b55ca4361e6714b425e03f117fb24300a7ccac459567e5fc1b82bd"
     },
     {
       "path": "tests/test_ac_policy_integration.py",
@@ -1580,8 +1694,8 @@
     },
     {
       "path": "tests/test_contest_submission.py",
-      "bytes": 18110,
-      "sha256": "71ccd91a8def4266c4ee0d72761c551f2311801c3f059fcff8822d04c9a87d04"
+      "bytes": 21734,
+      "sha256": "076e11365e6fd30e135678185193651e9e8270c917b9174fe59570b8d948fc9e"
     },
     {
       "path": "tests/test_control.py",
